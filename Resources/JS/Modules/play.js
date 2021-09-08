@@ -1,7 +1,7 @@
-import { BGMManager } from "/Resources/JS/Modules/sound.js"
-import { Character } from "/Resources/JS/Modules/character.js"
-import { Delay, Intro, Ending, GameOver, LogManager } from "/Resources/JS/Modules/exts.js"
-import { intros, scenes } from "/Resources/JS/Scene/scene.js"
+import { BGMManager } from "./sound.js"
+import { Character } from "./character.js"
+import { Delay, Intro, Ending, GameOver, LogManager } from "./exts.js"
+import { intros, scenes } from "./scene.js"
 
 let isBattleTime = false;
 let battleToScene = false;
