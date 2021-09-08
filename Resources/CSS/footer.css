@@ -1,0 +1,15 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	background-color:rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.footer p {
+    margin: 15px 0;
+}

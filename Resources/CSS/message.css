@@ -1,0 +1,194 @@
+.intro-text {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.intro-box, .novel-box {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: all 2s ease-out;
+    transform-style: preserve-3d;
+}
+
+.intro-box {
+    margin: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 32px;
+    font-family: "Calistoga-Regular";
+    letter-spacing: 3px;
+}
+
+.battle-box {
+    width: 100%;
+    position: absolute;
+    transform: rotateY(180deg);
+    background-color: black;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.novel-box, .battle-box {
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.message-area {
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    height: 180px;
+}
+
+.message-box {
+    float: right;
+    border-radius: 15px;
+    width: calc(100vw - 220px);
+    height: 100%;
+    position: relative;
+    margin-right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #FED;
+    opacity: 0;
+    transition: 2s opacity;
+}
+
+.message-box:before {
+    content:"";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: 60px;
+    left: -30px;
+    border-width: 15px;
+    border-color: transparent rgba(0, 0, 0, 0.7) transparent transparent;
+    border-style: solid;
+}
+
+.avatar-box, .battle-avatar-box {
+    position: absolute;  
+    float: left;
+    width: 200px;
+}
+
+.avatar-box {
+    margin-left: 10px;
+    bottom: -10px;
+    opacity: 0;
+    transition: 2s opacity;
+}
+
+.battle-avatar-box {
+    left: 40px;
+    bottom: 80px;
+}
+
+.avatar-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.body-img {
+    position: absolute;
+    bottom: 0px;
+    width: auto;
+    height: 100%;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.message {
+    margin: 30px;
+    color:rgba(255, 255, 255, 0.9);
+    font-size: 30px;
+    font-family: "Calistoga-Regular";
+    letter-spacing: 1px;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.body-area, .enemy-area {
+    position: absolute;
+    bottom: 0px;
+    height: 90%;
+    width: 40%;
+    max-width: 600px;
+    min-width: 300px;
+    opacity: 0;
+    
+}
+
+.body-area {
+    right: 100px;
+    transition: all 0.5s ease-out;
+}
+
+.enemy-area {
+    right: 0;
+    transition: all 1s ease-out;
+}
+
+.black-board {
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    min-width: 500px;
+    min-height: 300px;
+    top: 60px;
+    left: 60px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+    overflow-y: scroll;
+    border: tan solid 3px;
+    border-top: #bda27e solid 3px;
+    border-left: #b19876 solid 3px;
+    border-bottom: #c9ad86 solid 3px;
+    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
+    /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+.black-board::-webkit-scrollbar {
+    display: none;
+}
+
+.log-message {
+    font-size: 24px;
+    font-family: "Sriracha-Regular";
+    color: white;
+    margin: 8px 20px;
+}
+
+.fade-out {
+    animation-name: animateFadeout;
+    -webkit-animation-name: animateFadeout;
+    animation-duration: "0.8s";
+    -webkit-animation-duration: "0.8s";
+}
+
+@keyframes animateFadeout {
+    0% { opacity: 1; -webkit-transform: scale(1);}
+    50% {opacity: 1; -webkit-transform: scale(1.05);}
+    100% {-webkit-transform: scale(0.1); opacity: 0;}
+}
+
+@-webkit-keyframes animateFadeout {
+    0% { opacity: 1; -webkit-transform: scale(1);}
+    50% {opacity: 1; -webkit-transform: scale(1.05);}
+    100% {-webkit-transform: scale(0.1); opacity: 0;}
+}
