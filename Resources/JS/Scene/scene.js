@@ -340,6 +340,6 @@ export const intros = [
     },
     {
         title: "",
-        content: "Mọi bản quyền hình ảnh/âm thanh thuộc về KAGAMI WORKs"
+        content: "Mọi bản quyền hình\nảnh/âm thanh thuộc về KAGAMI WORKs"
     }
 ]
