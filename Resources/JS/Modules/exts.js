@@ -19,7 +19,8 @@ export const Intro = (introText) => {
     })
 }
 
-export const Ending = async (novelBox) => {
+export const Ending = async (novelBox, endingText = ["KẾT THÚC"]) => {
+
     novelBox.style.opacity = "0";
     await Delay(2000);
     let endingBox = document.createElement("div");

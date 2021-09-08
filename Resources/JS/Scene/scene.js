@@ -330,5 +330,16 @@ export const scenes = [
 ]
 
 export const intros = [
-    
+    {
+        title: "TÀ KÍNH",
+        content: "Chương III: Thái Vân"
+    },
+    {
+        title: "BẢN DỊCH",
+        content: "Việt Hóa Game (Lê Hiếu)\nHội Game Á Châu (Lốp Love)"
+    },
+    {
+        title: "",
+        content: "Mọi bản quyền hình ảnh/âm thanh thuộc về KAGAMI WORKs"
+    }
 ]

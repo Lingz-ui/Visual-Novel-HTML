@@ -43,7 +43,7 @@
 .message-area {
     position: absolute;
     width: 100%;
-    bottom: 60px;
+    bottom: 70px;
     height: 180px;
 }
 
@@ -87,7 +87,7 @@
 
 .battle-avatar-box {
     left: 40px;
-    bottom: 80px;
+    bottom: 90px;
 }
 
 .avatar-img {
