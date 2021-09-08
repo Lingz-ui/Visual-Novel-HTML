@@ -1,4 +1,4 @@
-import { play } from "/Resources/JS/Modules/play.js"
+import { play } from "Resources/JS/Modules/play.js"
 
 window.addEventListener('load', () => {
     let isFirstTime = true;
